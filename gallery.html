@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KCL Naturals (pvt) ltd</title>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Navbar Styling */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #333;
+      padding: 15px 20px;
+      color: white;
+    }
+    
+    .button{
+      padding: 10px 20px;
+      background-color:var(--text-color);
+      color:var(--bg-color);
+      border:none;
+      cursor:pointer;
+      margin-top:15px;
+      border-radius: 5px;
+      transition: color 0.3s;
+     }
+     .button:hover{
+      background-color:#695d5d;
+     }
+    
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    /* Default (light) theme */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+/* Dark theme */
+.dark-theme {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+}
+
+/* Apply variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+    
+    /* Navigation Links */
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+    
+    .nav-links li {
+      margin: 0 15px;
+    }
+    
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+    
+    .nav-links a:hover {
+        color: #08e22d;
+    }
+    
+    /* Mobile Menu Icon */
+    .menu-toggle {
+      font-size: 2rem;
+      display: none;
+      cursor: pointer;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #333;
+        text-align: center;
+      }
+    
+      .nav-links li {
+        margin: 10px 0;
+      }
+    
+      .menu-toggle {
+        display: block;
+      }
+    
+      .nav-links.show {
+        display: flex;
+      }
+    }
+    
+    /* Factory Gallery Section */
+  .factory-gallery {
+    text-align: center;
+    padding: 30px;
+    background: #f5f5f5;
+  }
+
+  .factory-gallery h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    bottom: 20px;
+    justify-content: center;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+   
+
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">KCL Naturals</div>
+    <ul class="nav-links">
+        <li><a href="D:\KCL Naturals\home.html">Home</a></li>
+        <li><a href="D:\KCL Naturals\about.html">About</a></li>
+        <li><a href="D:\KCL Naturals\services.html">Services</a></li>
+      <li><a href="D:\KCL Naturals\contact.html">Contact</a></li>
+      <li><a href="D:\KCL Naturals\gallery.html">Gallery</a></li>
+    </ul>
+    <button class="button"onclick="toggleTheme()">Toggle Theme</button>
+    <div class="menu-toggle">&#9776;</div> <!-- Mobile Menu Icon -->
+  </nav>
+
+  <script>
+   const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
+
+
+  </script> 
+
+  
+  </div>
+  <div class="factory-gallery">
+  
+    <div class="gallery">
+      <img src="img1.jpg" alt="Factory Image 1">
+      <img src="img2.jpg" alt="Factory Image 2">
+      <img src="img4.jpg"alt="Factory Image 3">
+      <img src="img38.jpg" alt="Factory Image 4">
+  
+  
+    </div>
+    <br>
+    <div class="gallery">
+      <img src="img5.jpg" alt="Factory Image 1">
+      <img src="img6.jpg" alt="Factory Image 2">
+      <img src="img7.jpg" alt="Factory Image 3">
+      <img src="img8.jpg" alt="Factory Image 4">
+      
+    </div>
+    <br>
+    <div class="gallery">
+      <img src="img10.jpg" alt="Factory Image 1">
+      <img src="img11.jpg" alt="Factory Image 2">
+      <img src="img12.jpg" alt="Factory Image 3">
+      <img src="img13.jpg" alt="Factory Image 4">
+      
+    </div>
+    <br>
+    <div class="gallery">
+      <img src="img14.jpg" alt="Factory Image 1">
+      <img src="img15.jpg" alt="Factory Image 2">
+      <img src="img16.jpg" alt="Factory Image 3">
+      <img src="img17.jpg" alt="Factory Image 4">
+      
+    </div>
+    <br>
+    <div class="gallery">
+      <img src="img18.jpg" alt="Factory Image 1">
+      <img src="img19.jpg" alt="Factory Image 2">
+      <img src="img20.jpg" alt="Factory Image 3">
+      <img src="img21.jpg" alt="Factory Image 4">
+      
+    </div>
+    <br>
+    <div class="gallery">
+      <img src="img22.jpg" alt="Factory Image 1">
+      <img src="img23.jpg" alt="Factory Image 2">
+      <img src="img24.jpg" alt="Factory Image 3">
+      <img src="img25.jpg" alt="Factory Image 4">
+      
+    </div>
+    <br>
+    <div class="gallery">
+      <img src="img26.jpg" alt="Factory Image 1">
+      <img src="img39.jpg" alt="Factory Image 2">
+      <img src="img28.jpg" alt="Factory Image 3">
+      <img src="img29.jpg" alt="Factory Image 4">
+      
+    </div>
+    <br>
+    <div class="gallery">
+      <img src="img30.jpg" alt="Factory Image 1">
+      <img src="img31.jpg" alt="Factory Image 2">
+      <img src="img32.jpg" alt="Factory Image 3">
+      <img src="img33.jpg" alt="Factory Image 4">
+      
+    </div>
+    <br>
+    <div class="gallery">
+      <img src="img34.jpg" alt="Factory Image 1">
+      <img src="img35.jpg" alt="Factory Image 2">
+      <img src="img36.jpg" alt="Factory Image 3">
+      <img src="img37.jpg" alt="Factory Image 4">
+      
+    </div>
+  
+  
+  
+  </div>
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-theme');
+    
+      // Save the user's preference in localStorage
+      if (document.body.classList.contains('dark-theme')) {
+        localStorage.setItem('theme', 'dark');
+      } else {
+        localStorage.setItem('theme', 'light');
+      }
+    }
+    
+    // Load the saved theme on page load
+    window.onload = () => {
+      if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-theme');
+      }
+    };
+  </script>
+</body>
+</html>

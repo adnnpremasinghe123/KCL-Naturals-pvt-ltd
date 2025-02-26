@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KCL Naturals (pvt) ltd</title>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Navbar Styling */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #333;
+      padding: 15px 20px;
+      color: white;
+    }
+    
+    .button{
+      padding: 10px 20px;
+      background-color:var(--text-color);
+      color:var(--bg-color);
+      border:none;
+      cursor:pointer;
+      margin-top:15px;
+      border-radius: 5px;
+      transition: color 0.3s;
+     }
+     .button:hover{
+      background-color:#695d5d;
+     }
+    
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    /* Default (light) theme */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+/* Dark theme */
+.dark-theme {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+}
+
+/* Apply variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+    
+    /* Navigation Links */
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+    
+    .nav-links li {
+      margin: 0 15px;
+    }
+    
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+    
+    .nav-links a:hover {
+        color: #08e22d;
+    }
+    
+    /* Mobile Menu Icon */
+    .menu-toggle {
+      font-size: 2rem;
+      display: none;
+      cursor: pointer;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #333;
+        text-align: center;
+      }
+    
+      .nav-links li {
+        margin: 10px 0;
+      }
+    
+      .menu-toggle {
+        display: block;
+      }
+    
+      .nav-links.show {
+        display: flex;
+      }
+    }
+    .hero {
+      background: url('RubberTrees.jpg') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+
+  /* Contact Section */
+  .contact-container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+  }
+
+  .contact-container h2 {
+      font-size: 2rem;
+      color: #2E8B57;
+      margin-bottom: 10px;
+  }
+
+  .contact-container p {
+      font-size: 1.1rem;
+      color: #444;
+  }
+
+  /* Contact Details */
+  .contact-details {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+  }
+
+  .contact-box {
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 280px;
+      text-align: center;
+  }
+
+  .contact-box h3 {
+      color: #006400;
+      margin-bottom: 10px;
+  }
+
+  .contact-box p {
+      font-size: 1rem;
+      color: #555;
+  }
+
+  
+ 
+
+  /* Google Map */
+  .map-container {
+      width: 100%;
+      max-width: 800px;
+      margin: 40px auto;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .map-container iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+  }
+
+  /* Footer */
+  .footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+  }
+   
+
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">KCL Naturals</div>
+    <ul class="nav-links">
+        <li><a href="D:\KCL Naturals\home.html">Home</a></li>
+        <li><a href="D:\KCL Naturals\about.html">About</a></li>
+        <li><a href="D:\KCL Naturals\services.html">Services</a></li>
+        <li><a href="D:\KCL Naturals\contact.html">Contact</a></li>
+        <li><a href="D:\KCL Naturals\gallery.html">Gallery</a></li>
+    </ul>
+    <button class="button"onclick="toggleTheme()">Toggle Theme</button>
+    <div class="menu-toggle">&#9776;</div> <!-- Mobile Menu Icon -->
+  </nav>
+
+  <script>
+   const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
+
+
+  </script> 
+  <!-- Hero Section -->
+  <div class="hero">
+    Get in Touch with KCL Naturals
+</div>
+
+<!-- Contact Section -->
+<div class="contact-container">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Reach out to us via phone, email, or visit our office.</p>
+
+    <div class="contact-details">
+        <div class="contact-box">
+            <h3>📍 Our Address</h3>
+            <p>Govinna, Bulathsinhala, Sri Lanka</p>
+        </div>
+        <div class="contact-box">
+            <h3>📞 Phone</h3>
+            <p>+94 77-2242218</p>
+        </div>
+        <div class="contact-box">
+            <h3>📧 Email</h3>
+            <p>kclnaturals@gmail.com</p>
+        </div>
+    </div>
+    
+     
+
+
+    <!-- Google Map -->
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31686.22515622317!2d79.84872847431635!3d6.927078522799716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25920d06df0fd%3A0x3b53f598b5aaf8b6!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2sus!4v1707927454398!5m2!1sen!2sus" 
+            allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+</div>
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle('dark-theme');
+  
+    // Save the user's preference in localStorage
+    if (document.body.classList.contains('dark-theme')) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+    }
+  }
+  
+  // Load the saved theme on page load
+  window.onload = () => {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark-theme');
+    }
+  };
+</script>
+
+<!-- Footer -->
+<div class="footer">
+    &copy; 2025 KCL Naturals. All Rights Reserved.
+</div>
+
+  </div>
+</body>
+</html>
